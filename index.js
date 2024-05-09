@@ -4,12 +4,16 @@ const port = 4000;
 const connect = require('./connect')
 const model = require('./Models/Schema')
 const creat = require('./songdb')
-app.get("/" , async(req,res)=>{
+
+app.use(express.static('./Music'))
+
+
+app.get("/alpha/aulbums" , async(req,res)=>{
 
 let db = await connect()
 let collection = await db.collection('songs')
-let c = await req.query
-let data = await collection.find(c).toArray()
+let find = await req.query
+let data = await collection.find(find).toArray()
 console.warn(data);
 console.log(req.query);
 res.status(200).json(data)
