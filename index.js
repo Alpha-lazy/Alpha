@@ -8,8 +8,10 @@ app.get("/" , async(req,res)=>{
 
 let db = await connect()
 let collection = await db.collection('songs')
-let data = await collection.find({}).toArray()
+let c = await req.query
+let data = await collection.find(c).toArray()
 console.warn(data);
+console.log(req.query);
 res.status(200).json(data)
     
 })
