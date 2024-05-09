@@ -7,6 +7,7 @@ const connect = require("./connect")
         
       let db =  await connect()
    let Collections =  await db.collection('songs')
+        Collections.deleteMany()
         Collections.insertMany(aulbums)
      console.log("success to ceate");
     
