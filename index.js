@@ -5,7 +5,7 @@ const connect = require('./connect')
 const model = require('./Models/Schema')
 const creat = require('./songdb')
 
-app.use(express.static('./Music'))
+app.use('/uri' , express.static(__dirname +'/Music'))
 
 
 app.get("/alpha/aulbums" , async(req,res)=>{
