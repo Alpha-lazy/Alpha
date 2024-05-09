@@ -15,5 +15,5 @@ const connect = require("./connect")
     }
     
 }
-create()
+module.exports = create
 
