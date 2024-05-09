@@ -2,22 +2,22 @@ const express = require('express');
 const app = express();
 const port = 4000;
 const connect = require('./connect')
-
+const model = require('./Models/Schema')
 app.get("/" , async(req,res)=>{
-    try {
-        await connect()  
-        res.send("We are in the server")
-    } catch (error) {
-        res.send("We are not in the server")
-        
-    }
+
+let db = await connect()
+let collection = await db.collection('songs')
+let data = await collection.find({}).toArray()
+console.warn(data);
+res.status(200).json(data)
     
 })
 
 
 app.listen(port, async()=>{
     try {
-        
+        await connect() 
+        await model()
         console.log("app listen at port 4000");
     } catch (error) {
         console.log("app does not listen at port 4000");

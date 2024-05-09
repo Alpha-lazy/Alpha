@@ -12,20 +12,21 @@ const client = new MongoClient(uri, {
 });
 
 async function run() {
-  try {
+ 
     // .command({ ping: 1 })
-    await client.connect();
-  
-   let collection =  await client.db("songs2").collection('books');
-
-   let data = await collection.find({}).toArray()
-   console.log(data);
+   let result= await client.connect();
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
-  } finally {
-    
-    await client.close();
-  }
-}
+    return   result.db("songs2");
+
+
+   
+  } 
 
 module.exports =run;
+
+
+
+
+
+
 
