@@ -1,4 +1,7 @@
 
+
+
+
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://Anish:Anish%402007@cluster0.6c1gzun.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
@@ -15,7 +18,7 @@ async function run() {
  
     // .command({ ping: 1 })
    let result= await client.connect();
-    console.log("Pinged your deployment. You successfully connected to MongoDB!");
+    // console.log("Pinged your deployment. You successfully connected to MongoDB!");
     return   result.db("songs2");
 
 

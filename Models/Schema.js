@@ -31,7 +31,7 @@ const main = async()=>{
            }
         }
      } )
-     console.log("created");
+   //   console.log("created");
     } catch (error) {
        console.log("fail to create"); 
     }

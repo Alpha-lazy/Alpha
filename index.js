@@ -5,8 +5,20 @@ const connect = require('./connect')
 const model = require('./Models/Schema')
 const creat = require('./songdb')
 
-app.use('/uri' , express.static(__dirname +'/Music'))
 
+
+
+const cors = require('cors');
+const corsConfig = {
+  origin:"*",
+  credential:true,
+  methods:["GET","POST","PUT","DELETE"],
+}
+
+app.options("", cors(corsConfig))
+app.use(cors(corsConfig))
+app.use('/uri' , express.static(__dirname +'/Music'))
+console.log(__dirname);
 
 app.get("/alpha/aulbums" , async(req,res)=>{
 
@@ -14,9 +26,10 @@ let db = await connect()
 let collection = await db.collection('songs')
 let find = await req.query
 let data = await collection.find(find).toArray()
-console.warn(data);
-console.log(req.query);
+// console.warn(data);
+// console.log(req.query);
 res.status(200).json(data)
+
     
 })
 

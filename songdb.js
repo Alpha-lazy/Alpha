@@ -9,7 +9,7 @@ const connect = require("./connect")
    let Collections =  await db.collection('songs')
         Collections.deleteMany()
         Collections.insertMany(aulbums)
-     console.log("success to ceate");
+    //  console.log("success to ceate");
     
     } catch (error) {
         console.log(error);
