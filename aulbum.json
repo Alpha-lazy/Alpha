@@ -1,18 +1,29 @@
 [
     {
         "name":"295",
-        "uri":"http://localhost/path/295.mp3",
+        "uri":"https://alpha2-lovat.vercel.app/uri/295.mp3",
         "author":"Siddhu musewala"
     },
 
     {
-        "name":"Aigiri Nandini.mp3",
-        "uri":"http://localhost/path/Aigiri%20Nandini.mp3",
-        "author":"Siddhu musewala"
+        "name":"Aigiri Nandini",
+        "uri":"https://alpha2-lovat.vercel.app/uri/Aigiri-Nandini.mp3",
+        "author":"Brodha V"
     },
 
     {
-        "name":"Aigiri Nandini.mp3",
-        "uri":"http://localhost/path/Aigiri%20Nandini.mp3",
-        "author":"Siddhu musewala"
-    }]
+        "name":"BABAM BAM (SLOWED + REVERB)",
+        "uri":"https://alpha2-lovat.vercel.app/uri/BABAM BAM (SLOWED + REVERB).mp3",
+        "author":"Paradox"
+    },
+    {
+        "name":"Desi-Kalakaar",
+        "uri":"https://alpha2-lovat.vercel.app/uri/Desi-Kalakaar.mp3",
+        "author":"Paradox"
+    },
+    {
+        "name":"Desi-Kalakaar",
+        "uri":"https://alpha2-lovat.vercel.app/uri/Desi-Kalakaar.mp3",
+        "author":"Yo Yo Honey Singh"
+    }
+]
