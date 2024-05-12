@@ -24,7 +24,9 @@ app.get("/alpha/aulbums" , async(req,res)=>{
 
 let db = await connect()
 let collection = await db.collection('songs')
+// let find = await req.query
 let find = await req.query
+console.log(find);
 let data = await collection.find(find).toArray()
 // console.warn(data);
 // console.log(req.query);
