@@ -2,28 +2,33 @@
     {
         "name":"295",
         "uri":"https://alpha2-lovat.vercel.app/uri/295.mp3",
-        "author":"Siddhu musewala"
+        "author":"Siddhu musewala",
+        "coverimg":"https://alpha2-lovat.vercel.app/coverimg/295.jpeg"
     },
 
     {
         "name":"Aigiri Nandini",
         "uri":"https://alpha2-lovat.vercel.app/uri/Aigiri-Nandini.mp3",
-        "author":"Brodha V"
+        "author":"Brodha V",
+        "coverimg":"https://alpha2-lovat.vercel.app/coverimg/Aigiri-Nandini.jpeg"
     },
 
     {
         "name":"BABAM BAM (SLOWED + REVERB)",
         "uri":"https://alpha2-lovat.vercel.app/uri/BABAM BAM (SLOWED + REVERB).mp3",
-        "author":"Paradox"
+        "author":"Paradox",
+        "coverimg":"https://alpha2-lovat.vercel.app/coverimg/Babam%20bam.jpeg"
     },
     {
         "name":"Desi-Kalakaar",
         "uri":"https://alpha2-lovat.vercel.app/uri/Cheques (Slowed).mp3",
-        "author":"Shubh"
+        "author":"Shubh",
+        "coverimg":"https://alpha2-lovat.vercel.app/coverimg/cheques.jpeg"
     },
     {
         "name":"Desi-Kalakaar",
         "uri":"https://alpha2-lovat.vercel.app/uri/Desi-Kalakaar.mp3",
-        "author":"Yo Yo Honey Singh"
+        "author":"Yo Yo Honey Singh",
+        "coverimg":"https://alpha2-lovat.vercel.app/coverimg/Desi%20kalakar.jpeg"
     }
 ]
