@@ -43,7 +43,6 @@ let id = await req.query.id
 
 const objectId =new ObjectId(id);
 
-
 const query = { _id:  objectId };
 
 
