@@ -18,7 +18,7 @@ async function run() {
  
     // .command({ ping: 1 })
    let result= await client.connect();
-    // console.log("Pinged your deployment. You successfully connected to MongoDB!");
+    console.log("Pinged your deployment. You successfully connected to MongoDB!");
     return   result.db("songs2");
 
 

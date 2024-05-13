@@ -20,7 +20,7 @@ const main = async()=>{
                     
                  },
                  uri: {
-                    bsonType: "string"
+                    bsonType: "string",
                     
                  },
                  author: {
