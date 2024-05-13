@@ -13,7 +13,7 @@ const main = async()=>{
     db.createCollection("songs", {
         validator: {
            $jsonSchema: {  
-              required: [ "name", "uri", "author" ],
+              required: [ "name", "uri", "author","coverimg" ],
               properties: {
                  name: {
                     bsonType: "string",
@@ -26,6 +26,9 @@ const main = async()=>{
                  author: {
                     bsonType:"string" ,
                    
+                 },
+                 coverimg: {
+                  bsonType:"string" ,
                  }
               }
            }

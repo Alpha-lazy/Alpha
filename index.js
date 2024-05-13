@@ -18,7 +18,8 @@ const corsConfig = {
 app.options("", cors(corsConfig))
 app.use(cors(corsConfig))
 app.use('/uri' , express.static(__dirname +'/Music'))
-console.log(__dirname);
+app.use('/coverimg' , express.static(__dirname +'/coverimg'))
+
 
 app.get("/alpha/aulbums" , async(req,res)=>{
 
